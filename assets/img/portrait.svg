@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 520" width="440" height="520"
+     role="img" aria-labelledby="portrait-title">
+  <title id="portrait-title">Illustrated portrait of Hermione Granger holding an open book</title>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efece4"/>
+      <stop offset="1" stop-color="#e3dccd"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="440" height="520" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="440" height="520" fill="url(#panel)"/>
+    <circle cx="220" cy="220" r="150" fill="#e9ddcb"/>
+
+    <!-- neck -->
+    <path d="M198 268h44v56h-44z" fill="#e8caab"/>
+
+    <!-- shoulders and robe -->
+    <path d="M92 520c6-84 46-132 128-152 82 20 122 68 128 152z" fill="#3b4256"/>
+    <path d="M220 368c-16 8-28 22-34 42h68c-6-20-18-34-34-42z" fill="#f4f1e8"/>
+    <path d="M186 362l34 48 34-48-34-14z" fill="#4a5268"/>
+
+    <!-- hair: back mass -->
+    <path d="M220 80c-64 0-104 44-104 108 0 44 8 78 0 110 26-16 42-44 48-64l12-40c-10-38 4-70 44-70s54 32 44 70l12 40c6 20 22 48 48 64-8-32 0-66 0-110 0-64-40-108-104-108z" fill="#6b4a2e"/>
+
+    <!-- face -->
+    <path d="M220 136c38 0 58 26 58 62 0 42-24 74-58 74s-58-32-58-74c0-36 20-62 58-62z" fill="#f4dcc5"/>
+    <path d="M160 196c0-48 22-76 60-76s60 28 60 76c-12-28-32-40-60-40s-48 12-60 40z" fill="#6b4a2e"/>
+
+    <!-- features -->
+    <g fill="#3a2a1c">
+      <circle cx="199" cy="200" r="5"/>
+      <circle cx="243" cy="200" r="5"/>
+    </g>
+    <g stroke="#6b4a2e" stroke-width="4" stroke-linecap="round" fill="none">
+      <path d="M188 186c6-5 14-6 21-3"/>
+      <path d="M254 186c-6-5-14-6-21-3"/>
+    </g>
+    <path d="M212 232c6 4 12 4 18 0" stroke="#c98f76" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- wand tucked behind the ear -->
+    <path d="M276 160l44-24" stroke="#8a5a2b" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- open book -->
+    <g>
+      <path d="M220 494c-26-22-56-30-86-28v-72c30-2 60 6 86 28z" fill="#fbf8f1" stroke="#c9bfa8" stroke-width="3"/>
+      <path d="M220 494c26-22 56-30 86-28v-72c-30-2-60 6-86 28z" fill="#fbf8f1" stroke="#c9bfa8" stroke-width="3"/>
+      <path d="M220 422v72" stroke="#c9bfa8" stroke-width="4"/>
+      <g stroke="#cdc3ac" stroke-width="3" stroke-linecap="round">
+        <path d="M152 420h50M152 436h50M152 452h38"/>
+        <path d="M238 420h50M238 436h50M250 452h38"/>
+      </g>
+      <!-- hands -->
+      <path d="M128 470c-10 2-16 8-16 16s8 12 18 10 14-10 12-18z" fill="#f0d9c2"/>
+      <path d="M312 470c10 2 16 8 16 16s-8 12-18 10-14-10-12-18z" fill="#f0d9c2"/>
+    </g>
+  </g>
+</svg>

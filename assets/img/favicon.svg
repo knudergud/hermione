@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="HG monogram">
+  <style>
+    .bg { fill: #f7f5f0; }
+    .fg { fill: #6d4520; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #14161c; }
+      .fg { fill: #e0b07a; }
+    }
+  </style>
+  <rect class="bg" width="64" height="64" rx="14"/>
+  <path class="fg" d="M12 18h6v10h10V18h6v28h-6V34H18v12h-6z"/>
+  <path class="fg" d="M52 24.5a10.5 10.5 0 1 0 0 15v-7h-8v5h3v1.2a5.5 5.5 0 1 1 0-8.4z"/>
+</svg>

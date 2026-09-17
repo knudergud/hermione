@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#14161c"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#e0b07a"/>
+  <circle cx="1020" cy="315" r="145" fill="#1f232c"/>
+  <text x="1020" y="365" text-anchor="middle" font-family="DejaVu Serif, Georgia, serif"
+        font-size="120" fill="#e0b07a">HG</text>
+  <text x="90" y="250" font-family="DejaVu Serif, Georgia, serif" font-size="72" fill="#eceef4">Hermione Granger</text>
+  <text x="90" y="322" font-family="DejaVu Sans, Helvetica, sans-serif" font-size="30" fill="#a6abbd">Head, Department of Magical Law Enforcement</text>
+  <text x="90" y="374" font-family="DejaVu Sans, Helvetica, sans-serif" font-size="30" fill="#a6abbd">Magical law · Creature rights · Reform</text>
+  <text x="90" y="505" font-family="DejaVu Sans, Helvetica, sans-serif" font-size="26" fill="#e0b07a" letter-spacing="4">HERMIONEGRANGER.EXAMPLE</text>
+</svg>

@@ -62,16 +62,16 @@ tools/make-cv.py            regenerates the CV PDF (standard library only)
 
 ## Before this goes live
 
-The content is a portfolio for a fictional person and the site is wired to a
-placeholder domain. Replace, in this order:
+The site is live at <https://knudergud.github.io/hermione/> and every URL in it
+points there. The content is still a portfolio for a fictional person. Replace,
+in this order:
 
-1. `hermionegranger.example` — appears in `index.html` (canonical, Open Graph, JSON-LD),
-   `robots.txt`, `sitemap.xml`, and `assets/img/og-card.svg`.
-2. `hello@hermionegranger.example` and the three "Elsewhere" links in the contact section.
-3. `assets/img/portrait.svg` — swap in a real photograph, keeping the `width`/`height`
+1. `hello@hermionegranger.example` and the three "Elsewhere" links in the contact
+   section, which do not resolve.
+2. `assets/img/portrait.svg` — swap in a real photograph, keeping the `width`/`height`
    attributes accurate so the layout does not shift.
-4. `assets/hermione-granger-cv.pdf` — the generated file is a placeholder; drop in the real CV.
-5. `sitemap.xml` `lastmod`, whenever the content changes.
+3. `assets/hermione-granger-cv.pdf` — the generated file is a placeholder; drop in the real CV.
+4. `sitemap.xml` `lastmod`, whenever the content changes.
 
 After changing either SVG that has a PNG twin, regenerate them:
 
@@ -82,6 +82,24 @@ node tools/render-images.mjs
 
 ## Deploying
 
-The repository root is the document root, so it can be served as-is by GitHub
-Pages, Netlify, Cloudflare Pages, or any bucket behind a CDN. Serve `404.html`
-as the not-found page and keep `index.html` at the root.
+The repository root is the document root, so GitHub Pages serves it directly
+from `main` with no build step.
+
+`.nojekyll` at the root turns Jekyll off. Without it, Pages runs the repository
+through Jekyll with the primer theme, which injects a generated
+`assets/css/style.css`, and which will render `README.md` as the home page for
+any commit that has no `index.html`. Keep the file.
+
+Paths are relative everywhere except `404.html`, because a not-found page can be
+served at any depth and relative paths would resolve against the missing URL. Its
+three absolute paths carry the `/hermione/` project prefix.
+
+### Moving to a custom domain
+
+1. Drop the `/hermione/` prefix from the three absolute paths in `404.html`.
+2. Replace `https://knudergud.github.io/hermione/` with the new origin in
+   `index.html` (canonical, Open Graph, JSON-LD), `robots.txt`, `sitemap.xml`,
+   and the footer text of `assets/img/og-card.svg`, then re-run `tools/render-images.mjs`.
+3. Add a `CNAME` file at the root containing the bare domain.
+
+The relative paths in `index.html` and `site.webmanifest` need no changes either way.
